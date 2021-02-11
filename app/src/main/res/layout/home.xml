@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="30dp"
+    android:layout_height="match_parent">
+
+   <!-- <TextView
+        android:layout_margin="10dp"
+        android:text="Please enable this keyboard from your settings page to start using it"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>-->
+
+ <ImageView
+     android:id="@+id/keyboardImage"
+     android:layout_width="match_parent"
+     android:layout_height="180dp"
+     android:scaleType="fitXY"
+     android:src="@drawable/keyboard3" />
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/keyboardImage"
+     android:layout_alignParentBottom="true"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="60dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginBottom="420dp"
+     android:gravity="center"
+     android:text="@string/ime_name"
+     android:textColor="#000"
+     android:textSize="30dp"
+     android:typeface="serif" />
+
+ <RadioButton
+        android:id="@+id/rb_enable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="366dp"
+        android:clickable="false"
+        android:text="1.  Enable keyboard"
+        android:textIsSelectable="false"
+        android:textSize="15dp" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@+id/btn_next"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="105dp">
+
+
+
+    </LinearLayout>-->
+
+
+    <View
+        android:layout_width="0.25dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="311dp"
+        android:layout_marginBottom="302dp"
+        android:background="#000" />
+
+    <RadioButton
+        android:id="@+id/rb_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="276dp"
+        android:clickable="false"
+        android:text="2.  Choose keyboard"
+        android:textIsSelectable="false"
+        android:textSize="15dp" />
+
+ <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/round_bg_shape"
+        android:text="Choose KEYBOARD"
+        android:textColor="#fff"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
